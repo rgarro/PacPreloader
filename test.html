@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>PacPreloader Test File</title>
+		<meta name="description" content="PacPreloader Test File" />
+		<meta name="author" content="Rolando Garro" />
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery.pacpreloader.js"></script>
+		<style>
+			#preloadImg{
+				margin-top: 20px;
+				margin-left: 325px;
+				width: 500px;
+				background-color: #FFFFFF; 
+				background-image: url(/pacnoodle.png);
+				background-repeat: no-repeat;
+				background-position: 10px 0px;
+				padding-left: 5px;
+			}
+		</style>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				 
+				$("#preloadImg").PacPreloader();
+			});
+		</script>	
+	</head>
+
+	<body>
+		<div>
+			<header>
+				<div id="preloadImg"><img id='pacFace' src="/ajax-loader.gif" border="0"/></div>
+			</header>
+			<nav>
+				<p>
+					<a href="/">Home</a>
+				</p>
+				<p>
+					<a href="/contact">Contact</a>
+				</p>
+			</nav>
+
+			<div>
+
+			</div>
+
+			<footer>
+				<p>
+					&copy; Copyright  by Rolando Garro
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>
